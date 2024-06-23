@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>CoFee | Recipes</title>
+        <link rel="icon" type="image/x-icon" href="../Images/beans.png">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navitems">
+            <div class="navLeft">
+                <a href="../Sites/home.html">
+                    <img border="0" alt="W3Schools" src="../Images/logofinal.png" height="65px">
+                </a>
+            </div>
+            <div class="navCenter">
+                <ul>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="beans.html">Beans</a></li>
+                    <li><a href="comingsoon.html">Machines</a></li>
+                    <li><a href="comingsoon.html">Tips</a></li>
+                </ul>
+            </div>
+            <div class="navRight">
+                <button onclick="document.location='../Sites/login.html'" class="navbutton w3-button w3-round-xxlarge w3-hover-white">
+                <span>Get Premium</span>
+                </button>
+            </div>
+        </nav>
+        <div class="divIntroRecipes">
+            <h1 class="libre-baskerville-bold">Find pictures, descriptions and guides</h1>
+            <h3 class="sedan-sc-regular">Updated weekly. Just click on the preferred drink.</h3>
+            <button onclick="scrollDown(0,500)" class="w3-button w3-round-xxlarge w3-black w3-hover-gray"><b>Start exploring!</b></button>
+        </div>
+        <br>
+        <div class="containerRecipe">
+            <div class="recipeBox">
+                <div class="rowOne">
+                    <ul>
+                        <!-- Check responsiveness of the text layout, how about putting a <br> between name and description so it looks nice?-->
+                        <li id="freddo" onclick="gray(this, 'freddoBox')"><a class="libre-baskerville-bold">Freddo<br>Espresso</a><p class="flag">🇬🇷</p><p class="sedan-sc-regular">Delicious, unique!</p><img src="../Images/IMG_1591 Background Removed.png" height=65% width=65%></li>
+                        <li id="americano"onclick="gray(this, 'americanoBox')"><a class="libre-baskerville-bold">Iced<br>Americano</a><p class="flag">🇺🇸</p><p class="sedan-sc-regular">The iced classic!</p><img src="../Images/IMG_1593 Background Removed.png" height=65% width=65%></li>
+                        <li id="latte" onclick="gray(this, 'latteBox')"><a class="libre-baskerville-bold">Latte<br>Macchiato</a><p class="flag">🇮🇹</p><p class="sedan-sc-regular">Milky coffee!</p><img src="../Images/lattenobg.png" height=60% width=60%></li>
+                        <li id="icedlatte"  onclick="gray(this, 'icedLatteBox')"><a class="libre-baskerville-bold">Iced<br>Latte</a><p class="flag">&#127758</p><p class="sedan-sc-regular">Milky & Icy!</p><img src="../Images/IMG_1595 Background Removed.png" height=60% width=45%></li>
+                        <li id="espresso"  onclick="gray(this, 'espressoBox')"><a class="libre-baskerville-bold">Classic<br>Espresso</a><p class="flag">&#127470&#127481</p><p class="sedan-sc-regular">The father!</p><img src="../Images/espresso.png" height=60% width=60%></li>
+                    </ul>
+                </div>
+                <div id="freddoBox">
+                    <h1 class="libre-baskerville-bold">Freddo Espresso</h1>
+                    <p class="flag">🇬🇷</p>
+                    <h3 class="sedan-sc-regular">Cold and lightly sweet double espresso. Delicious during hot summer months.</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Required materials:</h2>
+                    <h3 class="sedan-sc-regular">7-8 ice cubes, double espresso, sugar, milk frother</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Recipe:</h2>
+                    <p>Brew a double shot of espresso out of your preferred coffee machine.<br>
+                        Add sugar and one ice cube to the coffee (1 tsp - light / 2tsp - medium / 2tsp - sweet) and froth up until the coffee gets foamy.<br>
+                        Fill your glass with ice only (no water!).<br>
+                        Then, add the coffee mixture to the glass.<br>
+                        Enjoy! </p>
+                        <button id='buttonFreddo' onclick="gray_background(this, 'freddoBox')" class="rowbutton w3-button w3-round-xxlarge w3-black w3-hover-gray"><b>Done!</b></button>
+                </div>
+                <div id="americanoBox">
+                    <h1 class="libre-baskerville-bold">Iced Americano</h1>
+                    <p class="flag">🇺🇸</p>
+                    <h3 class="sedan-sc-regular">The original americano experience during hot days.</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Required materials:</h2>
+                    <h3 class="sedan-sc-regular">8-9 ice cubes, double espresso, sugar (if preferred), cold water</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Recipe:</h2>
+                    <p>Brew a double shot of espresso out of your preferred coffee machine.<br>
+                        If you like add sugar to the coffee and one ice cube to cool it down.<br>
+                        Fill your glass with ice cubes.<br>
+                        Then, add the coffee to the glass.<br>
+                        Fill up your glass with cold water.<br>
+                        Enjoy!</p>
+                        <button id='buttonAmericano' onclick="gray_background(this, 'americanoBox')" class="rowbutton w3-button w3-round-xxlarge w3-black w3-hover-gray"><b>Done!</b></button>
+                </div>
+                <div id="latteBox">
+                    <h1 class="libre-baskerville-bold">Latte Macchiato</h1>
+                    <p class="flag">🇮🇹</p>
+                    <h3 class="sedan-sc-regular">One of the classics with hot milk.</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Required materials:</h2>
+                    <h3 class="sedan-sc-regular">milk, single espresso, sugar (if preferred), milk frother</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Recipe:</h2>
+                    <p>Brew a single shot of espresso out of your preferred coffee machine.<br>
+                        Froth 175ml of milk.<br>
+                        Fill your glass with the frothed milk.<br>
+                        Then, add the shot of espresso to the glass.<br>
+                        If preferred, add sugar.<br>
+                        Enjoy!</p>
+                        <button id='buttonLatte' onclick="gray_background(this, 'latteBox')" class="rowbutton w3-button w3-round-xxlarge w3-black w3-hover-gray"><b>Done!</b></button>
+                </div>
+                <div id="icedLatteBox">
+                    <h1 class="libre-baskerville-bold">Iced Latte</h1>
+                    <p class="flag">🌎</p>
+                    <h3 class="sedan-sc-regular">Milky and light iced coffee. Delicious during summer and perfectly customizable.</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Required materials:</h2>
+                    <h3 class="sedan-sc-regular">9-10 ice cubes, single or double espresso, sugar (if preferred), milk, milk frother</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Recipe:</h2>
+                    <p>Brew a single or double shot of espresso out of your preferred coffee machine.<br>
+                        Add preferred amount of sugar and one ice cube to the coffee.<br>
+                        Froth up your cold milk.<br>
+                        Add your cold milk to a larger glass filled with ice cubes.<br>
+                        Add your cooled shot of coffee on top.<br>
+                        Enjoy!</p>
+                        <button id='buttonIcedLatte' onclick="gray_background(this, 'icedLatteBox')" class="rowbutton w3-button w3-round-xxlarge w3-black w3-hover-gray"><b>Done!</b></button>
+                </div>
+                <div id="espressoBox">
+                    <h1 class="libre-baskerville-bold">Classic Espresso</h1>
+                    <p class="flag">🇮🇹</p>
+                    <h3 class="sedan-sc-regular">The grandfather of coffees.</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Required materials:</h2>
+                    <h3 class="sedan-sc-regular">single espresso, sugar (if preferred)</h3>
+                    <h2 class="libre-baskerville-regular-italic rowdiv">Recipe:</h2>
+                    <p>Brew a single shot of espresso and add sugar if preferred.<br>
+                        Enjoy!</p>
+                    <button id='buttonEspresso' onclick="gray_background(this, 'espressoBox')" class="rowbutton w3-button w3-round-xxlarge w3-black w3-hover-gray"><b>Done!</b></button>
+                </div>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <br>
+        <footer class="footer">
+            © 2024 - Made by CoFee Ltd. Company - Designed and Programmed by xek2023x - T&C apply
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('.recipeBox').scrollTop = 0;
+            });
+
+            document.getElementById('freddo').addEventListener('click', function() {
+                document.getElementById('freddoBox').style.display = 'flex';
+            });
+            document.getElementById('buttonFreddo').addEventListener('click', function() {
+                document.getElementById('freddoBox').style.display = 'none';
+            });
+            document.getElementById('americano').addEventListener('click', function() {
+                document.getElementById('americanoBox').style.display = 'flex';
+            });
+            document.getElementById('buttonAmericano').addEventListener('click', function() {
+                document.getElementById('americanoBox').style.display = 'none';
+            });
+            document.getElementById('latte').addEventListener('click', function() {
+                document.getElementById('latteBox').style.display = 'flex';
+            });
+            document.getElementById('buttonLatte').addEventListener('click', function() {
+                document.getElementById('latteBox').style.display = 'none';
+            });
+            document.getElementById('icedlatte').addEventListener('click', function() {
+                document.getElementById('icedLatteBox').style.display = 'flex';
+            });
+            document.getElementById('buttonIcedLatte').addEventListener('click', function() {
+                document.getElementById('icedLatteBox').style.display = 'none';
+            });
+            document.getElementById('espresso').addEventListener('click', function() {
+                document.getElementById('espressoBox').style.display = 'flex';
+                document.getElementById('overlay').style.display = 'block';
+
+            });
+
+            function gray_background (element, box) {
+                document.getElementById(box).style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+            }
+
+            function gray (element, boxID) {
+                document.getElementById(boxID).style.display = 'flex';
+                document.getElementById('overlay').style.display = 'block';
+            }
+
+            function scrollDown (x, y) {
+                window.scrollBy(x, y);
+            }
+
+        </script>
+    </body>
+</html>

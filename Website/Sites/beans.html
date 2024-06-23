@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>CoFee | Beans</title>
+        <link rel="icon" type="image/x-icon" href="../Images/beans.png">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navitems">
+            <div class="navLeft">
+                <a href="../Sites/home.html">
+                    <img alt="CoFee" src="../Images/logofinal.png" height="65px">
+                </a>
+            </div>
+            <div class="navCenter">
+                <ul>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="beans.html">Beans</a></li>
+                    <li><a href="comingsoon.html">Machines</a></li>
+                    <li><a href="comingsoon.html">Tips</a></li>
+                </ul>
+            </div>
+            <div class="navRight">
+                <button onclick="document.location='../Sites/login.html'" class="navbutton w3-button w3-round-xxlarge w3-hover-white">
+                <span>Get Premium</span>
+                </button>
+            </div>
+        </nav>
+        <div class="divIntroBeans">
+            <h1 class="libre-baskerville-bold">Coffee Beans.</h1>
+            <h3 class="sedan-sc-regular">Find the best beans for your ultimate coffee experience.</h3>
+            <p class="playfair-display-authentic">Use our intelligent coffee beans finder.</p>
+            <h2 class="playfair-display-authentic">Find the coffee bag for your tastebuds!</h2>
+        </div>
+        <br>
+        <div class="intelligentFinder">
+            <div class="topInfo">
+                <h1 class="sedan-sc-regular">Choose your own preferences!</h1>
+            </div>
+            <div class="selector">
+                <div class="intelligence border border-dark rounded">
+                    <p><b><u>Flavor</u></b></p>
+                    <div class="flex">
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="flavors" id="exampleRadios1" value="Fruity">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Fruity
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="flavors" id="exampleRadios2" value="Nutty">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Nutty
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="flavors" id="exampleRadios3" value="Chocolatey">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Chocolatey
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="intelligence border border-dark rounded">
+                    <p><b><u>Roast</u></b></p>
+                    <div class="flex">
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="roasts" id="exampleRadios4" value="Light">
+                            <label class="form-check-label" for="exampleRadios4">
+                                Light
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="roasts" id="exampleRadios5" value="Medium">
+                            <label class="form-check-label" for="exampleRadios5">
+                                Medium
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="roasts" id="exampleRadios6" value="Dark">
+                            <label class="form-check-label" for="exampleRadios6">
+                                Dark
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="intelligence border border-dark rounded">
+                    <p><b><u>Origin</u></b></p>
+                    <div class="flex">
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="origins" id="exampleRadios7" value="Asia">
+                            <label class="form-check-label" for="exampleRadios7">
+                                Asia
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="origins" id="exampleRadios8" value="SouthAmerica">
+                            <label class="form-check-label" for="exampleRadios8">
+                                South<br>America
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="origins" id="exampleRadios9" value="Africa">
+                            <label class="form-check-label" for="exampleRadios9">
+                                Africa
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="intelligence border border-dark rounded">
+                    <p><b><u>Method</u></b></p>
+                    <div class="flex">
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="methods" id="exampleRadios10" value="DripCoffee">
+                            <label class="form-check-label" for="exampleRadios10">
+                                Drip coffee
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="methods" id="exampleRadios11" value="Espresso">
+                            <label class="form-check-label" for="exampleRadios11">
+                                Espresso
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="form-check radiointelligence">
+                            <input class="form-check-input" type="radio" name="methods" id="exampleRadios12" value="ColdBrew">
+                            <label class="form-check-label" for="exampleRadios12">
+                                Cold Brew
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="w3-button w3-round-xxlarge w3-white w3-hover-gray" onclick="isChecked()">
+                <img src="../Images/AI_sign.png" height="25px" width="25px">
+                <b>Find beans</b>
+            </button>
+            <p id="error_1"></p>
+        </div>
+        <br>
+        <div class="adForPremium">
+            <img src="../Images/beans.png" height="40px" style="margin-right: 15px;">
+            <p><b>Get all coffee beans' links and daily discounts on CoFee Premium!</b></p>
+        </div>
+        <br>
+        <div id="resultsFinder">
+            <h2 class="libre-baskerville-bold">Your personal result</h2>
+            <div class="resultContainerBeans">
+                <div class="resultBeans border border-dark rounded">
+                    <img id="imgResult" src="" height="100px">
+                    <hr>
+                    <h3 id="title"></h3>
+                    <hr>
+                    <div id="meters">
+                        <label for="intensity">Intensity: </label>
+                        <meter id="intensity" min="0" max="100" value="100">at 50/100</meter>
+                        <hr>
+                        <label for="roast">Roast: </label>
+                        <meter id="roast" min="0" max="100" value="100">at 50/100</meter>
+                        <hr>
+                        <label for="acidity">Acidity: </label>
+                        <meter id="acidity" min="0" max="100" value="20">at 50/100</meter>
+                    </div>
+                    <p id="infomessage">We can't provide your beans yet.<br>Please try another combination.<br>We'll be adding more combinations soon.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer class="footer">
+            © 2024 - Made by CoFee Ltd. Company - Designed and Programmed by xek2023x - T&C apply
+        </footer>
+        <script>
+            ['adForPremium', 'resultsFinder', 'result'].forEach(id => {
+                const div = document.getElementById(id);
+                if (div && div.nextElementSibling && div.nextElementSibling.tagName === 'BR') {
+                    div.nextElementSibling.remove();
+                }
+            });
+
+            function isChecked() {
+                ['adForPremium', 'resultsFinder', 'result'].forEach(id => {
+                const div = document.getElementById(id);
+                    if (div && div.nextElementSibling && div.nextElementSibling.tagName === 'BR') {
+                        div.nextElementSibling.remove();
+                    }
+                });
+                const categories = ['methods', 'origins', 'roasts', 'flavors'];
+                var allChecked = true;
+
+                for (let i = 0; i < categories.length; i++) {
+                    cat_name = categories[i];
+                    /* The getElementsByName tag is crucial, since we don't have a specific ID here! */
+                    radio_category = document.getElementsByName(cat_name);
+                    var isChecked = false;
+                    for (let a = 0; a < radio_category.length; a++) {
+                        if (radio_category[a].checked) {
+                            isChecked = true;
+                            break;
+                        }
+                    }
+                    if (isChecked == false) {
+                        allChecked = false;
+                        break;
+                    }
+                }
+                if (allChecked == false) {
+                    document.getElementById('error_1').innerHTML = "Please check all categories!";
+                }
+                else {
+                    document.getElementById('error_1').innerHTML = "";
+
+                    for (let i = 0; i < categories.length; i++) {
+                        cat_name = categories[i];
+                        /* The getElementsByName tag is crucial, since we don't have a specific ID here! */
+                        category = document.getElementsByName(cat_name);
+
+                        if (cat_name == 'flavors') {
+                            for (let a = 0; a < category.length; a++) {
+                                if (category[a].checked) {
+                                    var flavor = category[a];
+                                    break;
+                                }
+                            }
+                        }
+                        if (cat_name == 'origins') {
+                            for (let a = 0; a < category.length; a++) {
+                                if (category[a].checked) {
+                                    var origin = category[a];
+                                    break;
+                                }
+                            }
+                        }
+                        if (cat_name == 'roasts') {
+                            for (let a = 0; a < category.length; a++) {
+                                if (category[a].checked) {
+                                    var roast = category[a];
+                                    break;
+                                }
+                            }
+                        }
+                        if (cat_name == 'methods') {
+                            for (let a = 0; a < category.length; a++) {
+                                if (category[a].checked) {
+                                    var method = category[a];
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    
+                    personalizedCoffee(flavor, roast, origin, method);
+                    document.getElementById('flavors').textContent = flavor.value;
+                    document.getElementById('roasts').textContent = roast.value;
+                    document.getElementById('origins').textContent = origin.value;
+                    document.getElementById('methods').textContent = method.value;
+
+                }
+            }
+            
+            function personalizedCoffee(flavor, roast, origin, method) {
+                document.getElementById('resultsFinder').style.display = 'block';
+                document.getElementById('meters').style.display = 'block';
+                document.getElementById('imgResult').style.display = 'block';
+                document.getElementById('infomessage').style.display = 'none';
+                if (flavor.value == 'Fruity') {
+                    /* Asia Part */
+                    if (origin.value == 'Asia' && method.value != 'DripCoffee') {
+                        document.getElementById('imgResult').src = '../Images/barista_royal_fruity.png';
+                        document.getElementById('title').innerHTML = 'BARISTA ROYAL<br>Seleccion Especial';
+                        document.getElementById('intensity').value = '40';
+                        document.getElementById('acidity').value = '10';
+                        document.getElementById('roast').value = '33';
+                    }
+                    /* Fruity we got Asia only light!*/
+                    /* South America */
+                    else if (origin.value == 'SouthAmerica') {
+                        document.getElementById('imgResult').src = '../Images/meryem_guatemala.png';
+                        document.getElementById('title').innerHTML = 'Meryem Boz<br>Guatemala';
+                        document.getElementById('intensity').value = '60';
+                        document.getElementById('acidity').value = '40';
+                        document.getElementById('roast').value = '50';
+                    }   
+                    /* Africa */
+                    else if (origin.value == 'Africa') {
+                        document.getElementById('imgResult').src = '../Images/lavazza1.png';
+                        document.getElementById('title').innerHTML = 'LAVAZZA Tierra<br>For Africa';
+                        document.getElementById('intensity').value = '70';
+                        document.getElementById('acidity').value = '15';
+                        document.getElementById('roast').value = '50';
+                    }
+                    /* Else -> Give comment -> Not possible! & in the future, add a recommendation for afterwards! */
+                    else {
+                        document.getElementById('title').innerHTML = "Our system couldn't find the beans for your tastebuds!";
+                        document.getElementById('meters').style.display = 'none';
+                        document.getElementById('imgResult').style.display = 'none';
+                        document.getElementById('infomessage').style.display = 'block';
+                    }
+    
+                }
+                else if (flavor.value == 'Nutty') {
+                    /* Asia Part */
+                    if (roast.value == 'Dark' && origin.value == 'Asia' && method.value != 'DripCoffee') {
+                        document.getElementById('imgResult').src = '../Images/melinda_asia.png';
+                        document.getElementById('title').innerHTML = 'Melitta Manufacture<br>Espresso India';
+                        document.getElementById('intensity').value = '100';
+                        document.getElementById('acidity').value = '40';
+                        document.getElementById('roast').value = '80';
+                    }
+                    else if ((roast.value == 'Light' || roast.value == 'Medium') && origin.value == 'Asia') {
+                        document.getElementById('imgResult').src = '../Images/barista_royal_nutty.png';
+                        document.getElementById('title').innerHTML = 'BARISTA ROYAL<br>Pulau Kopi';
+                        document.getElementById('intensity').value = '50';
+                        document.getElementById('acidity').value = '5';
+                        document.getElementById('roast').value = '50';
+                    }
+                    /* South America Part */
+                    else if ((roast.value == 'Light' || roast.value == 'Medium') && origin.value == 'SouthAmerica') {
+                        document.getElementById('imgResult').src = '../Images/incapto_peru.png';
+                        document.getElementById('title').innerHTML = 'INCAPTO<br>Origin Peru';
+                        document.getElementById('intensity').value = '45';
+                        document.getElementById('acidity').value = '20';
+                        document.getElementById('roast').value = '50';
+                    }
+                    else if (roast.value == 'Dark' && origin.value == 'SouthAmerica') {
+                        document.getElementById('imgResult').src = '../Images/segafredo_brazil.png';
+                        document.getElementById('title').innerHTML = 'Segafredo Zanetti<br>Origin Brazil';
+                        document.getElementById('intensity').value = '80';
+                        document.getElementById('acidity').value = '40';
+                        document.getElementById('roast').value = '60';
+                    }
+                    /* Africa Part */
+                    else if (roast.value == 'Dark' && origin.value == 'Africa') {
+                        document.getElementById('imgResult').src = '../Images/afrocoffee1.png';
+                        document.getElementById('title').innerHTML = 'Afro Coffee<br>Strong & Earthy';
+                        document.getElementById('intensity').value = '100';
+                        document.getElementById('acidity').value = '10';
+                        document.getElementById('roast').value = '100';
+                    }
+                    else if ((roast.value == 'Light' || roast.value == 'Medium') && origin.value == 'Africa') {
+                        document.getElementById('imgResult').src = '../Images/segafredo_brazil.png';
+                        document.getElementById('title').innerHTML = 'LAVAZZA Tales<br>of Roma';
+                        document.getElementById('intensity').value = '80';
+                        document.getElementById('acidity').value = '40';
+                        document.getElementById('roast').value = '50';
+                    }
+                    else {
+                        document.getElementById('title').innerHTML = "Our system couldn't find the beans for your tastebuds!";
+                        document.getElementById('meters').style.display = 'none';
+                        document.getElementById('imgResult').style.display = 'none';
+                        document.getElementById('infomessage').style.display = 'block';
+                    }
+                    
+                }
+                else if (flavor.value == 'Chocolatey') {
+                    /* Asia Part */
+                    if (roast.value == 'Medium' && origin.value == 'Asia' && method.value != 'DripCoffee') {
+                        document.getElementById('imgResult').src = '../Images/melinda_asia.png';
+                        document.getElementById('title').innerHTML = 'Melitta Manufacture<br>Espresso India';
+                        document.getElementById('intensity').value = '100';
+                        document.getElementById('acidity').value = '40';
+                        document.getElementById('roast').value = '80';
+                    }
+                    else if (roast.value == 'Dark' && origin.value == 'Asia' && method.value != 'DripCoffee') {
+                        document.getElementById('imgResult').src = '../Images/asia_very_dark.png';
+                        document.getElementById('title').innerHTML = 'Black Dragon Espresso';
+                        document.getElementById('intensity').value = '100';
+                        document.getElementById('acidity').value = '10';
+                        document.getElementById('roast').value = '100';
+                    }
+                    else if (roast.value == 'Light' && origin.value == 'Asia') {
+                        document.getElementById('imgResult').src = '../Images/kopiluwak.png';
+                        document.getElementById('title').innerHTML = 'Kopi Luwak';
+                        document.getElementById('intensity').value = '40';
+                        document.getElementById('acidity').value = '10';
+                        document.getElementById('roast').value = '30';
+                    }
+                    /* South America */
+                    else if (roast.value == 'Dark' && origin.value == 'SouthAmerica' && method.value != 'DripCoffee') {
+                        document.getElementById('imgResult').src = '../Images/pure_chocolate.png';
+                        document.getElementById('title').innerHTML = 'YOCOMO Pure<br>Chocolate';
+                        document.getElementById('intensity').value = '100';
+                        document.getElementById('acidity').value = '20';
+                        document.getElementById('roast').value = '100';
+                    }
+                    else if ((roast.value == 'Light' || roast.value == 'Medium') && origin.value == 'SouthAmerica') {
+                        document.getElementById('imgResult').src = '../Images/lavazza3.png';
+                        document.getElementById('title').innerHTML = 'LAVAZZA<br>Tierra Wellness';
+                        document.getElementById('intensity').value = '50';
+                        document.getElementById('acidity').value = '10';
+                        document.getElementById('roast').value = '50';
+                    }
+                    /* Africa */
+                    else if (roast.value == 'Dark' && origin.value == 'Africa' && method.value != 'DripCoffee') {
+                        document.getElementById('imgResult').src = '../Images/afrocoffee2.png';   
+                        document.getElementById('title').innerHTML = 'Afro Coffee<br>Dark & Elegant';
+                        document.getElementById('intensity').value = '80';
+                        document.getElementById('acidity').value = '10';
+                        document.getElementById('roast').value = '100';
+                    }
+                    else if ((roast.value == 'Light' || roast.value == 'Medium') && origin.value == 'Africa') {
+                        document.getElementById('imgResult').src = '../Images/afrocoffee3.png';
+                        document.getElementById('title').innerHTML = 'Afro Coffee<br>Mild & Aromatic';
+                        document.getElementById('intensity').value = '50';
+                        document.getElementById('acidity').value = '20';
+                        document.getElementById('roast').value = '50';
+                    }
+                    else {
+                        document.getElementById('title').innerHTML = "Our system couldn't find the beans for your tastebuds!";
+                        document.getElementById('meters').style.display = 'none';
+                        document.getElementById('imgResult').style.display = 'none';
+                        document.getElementById('infomessage').style.display = 'block';
+                    }
+                }
+
+                ['adForPremium', 'resultsFinder', 'result'].forEach(id => {
+                const div = document.getElementById(id);
+                    if (div) {
+                        // Create a new element to be added
+                        const newElement = document.createElement('br');
+
+                        // Insert the new element after the current div
+                        div.insertAdjacentElement('afterend', newElement);
+                    }
+                });
+            };
+        </script>
+    </body>
+</html>
+
